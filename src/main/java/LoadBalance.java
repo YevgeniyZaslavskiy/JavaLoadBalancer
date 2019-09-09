@@ -18,13 +18,14 @@ public class LoadBalance {
 		// Static data includes server addresses
 		
 		// Hard code the servers in for now. TODO: Read serverlist file
-		servers.add(new ServerObject(20081, "93.74.110.188", 4000, 1.00));
+		servers.add(new ServerObject(20081, "172.100.0.11", 4000, 1.00));
+		servers.add(new ServerObject(20082, "172.100.0.12", 4000, 1.00));
 
 		
 		
 		
 		// Construct listener and select port here
-		LoadBalanceListener listener = new LoadBalanceListener(15100);
+		LoadBalanceListener listener = new LoadBalanceListener(80);
 		
 		// Pass in configuration options here
 		listener.configure();
