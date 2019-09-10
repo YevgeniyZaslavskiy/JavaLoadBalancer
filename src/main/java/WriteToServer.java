@@ -23,8 +23,8 @@ public class WriteToServer implements Runnable {
 			BufferedInputStream clientBufInStream = new BufferedInputStream(clientSock.getInputStream());
 			BufferedOutputStream serverBufOutStream = new BufferedOutputStream(serverSock.getOutputStream());
 			sendHTTPLine( serverBufOutStream, "GET /privacy/index.pdf HTTP/1.0" );
-			sendHTTPLine( serverBufOutStream, "Host: 172.101.0.10" );
-			sendHTTPLine( serverBufOutStream, "" );
+			sendHTTPLine( serverBufOutStream, "Host: 172.100.0.11" );
+			sendHTTPLine( serverBufOutStream, "Host: 172.100.0.12" );
 
 			this.serverBufOutStream = serverBufOutStream;
 			this.clientBufInStream = clientBufInStream;

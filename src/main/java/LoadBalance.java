@@ -18,8 +18,8 @@ public class LoadBalance {
 		// Static data includes server addresses
 		
 		// Hard code the servers in for now. TODO: Read serverlist file
-		servers.add(new ServerObject(80, "172.100.0.11", 4000, 1.00));
-		servers.add(new ServerObject(80, "172.100.0.12", 4000, 1.00));
+		servers.add(new ServerObject(20081, "172.100.0.11", 4000, 1.00));
+		servers.add(new ServerObject(20082, "172.100.0.12", 4000, 1.00));
 
 		
 		
